@@ -9,6 +9,10 @@
     -webkit-text-stroke-color: #000000;
     -webkit-text-stroke-width: 0.5px;
 }
+.small_stroke{
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 0.1px;
+}
 
 .font-secondary {
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -126,7 +130,8 @@ h6,
 }
 
 .hero-header {
-    background: url(../img/brucebanner.jpg) top right no-repeat ;
+    background: linear-gradient(rgba(43, 40, 37, .15), rgba(43, 40, 37, .8)), url(../img_prod/banners/banner_collage.webp) center center no-repeat;
+    /* background: url(../img_prod/banners/banner_collage.webp) top right no-repeat ; */
     background-size: cover ;
 
 }
@@ -264,7 +269,7 @@ h6,
 }
 
 .bg-offer {
-    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9)), url(../img/offer.jpg) center center no-repeat;
+    background: linear-gradient(rgba(43, 40, 37, .15), rgba(43, 40, 37, .9)), url(../img_prod/banners/macaroons.webp) center center no-repeat;
     background-size: cover;
 }
 
