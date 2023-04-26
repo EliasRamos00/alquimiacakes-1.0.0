@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alquimia Cakes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content=" " name="keywords">
+    <meta content=" " name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Incluye los estilos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-0 d-none d-lg-block">
+        <div class="row gx-0 justify-content-center">
+            <!-- <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <span>info@example.com</span>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-lg-4 text-center font-secondary bg-primary border-inner py-2">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase text-white stroke"><i
+                                class="fa fa-birthday-cake fs-1 text-dark me-3"></i>Alquimia Cakes</h1>
+                    </a>
+
+                </div>
+                <p>administrador</p>
+            </div>
+            <!-- <div class="col-lg-4 text-center bg-secondary py-3">
+                <div class="d-inline-flex align-items-center justify-content-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>+012 345 6789</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>Alquimia
+                Cakes</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+            <div class="navbar-nav ms-auto mx-lg-auto py-0 ">
+
+                <a href="pasteles.html" class="nav-item nav-link active">Pasteles</a>
+                <a href="galletas.html" class="nav-item nav-link active">Galletas</a>
+                <a href="macaroons.html" class="nav-item nav-link active">Macaroons</a>
+                <a href="sobreNosotros.html" class="nav-item nav-link active">Informacion sobre nosotros</a>
+                <a href="infoContacto.html" class="nav-item nav-link active">Informacion de contacto</a>
+                <a href="imgGenerales.html" class="nav-item nav-link active">Imagenes generales</a>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Botón para abrir el popup -->
+
+
+    <!-- Popup de confirmación de eliminación -->
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Confirmar eliminación</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Está seguro que desea eliminar este elemento?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="d-flex justify-content-between my-2" style="margin-right: 20px;">
+        <h2 class="my-3">Administrador de galletas.</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registroModal">Nuevo
+            producto</button>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="modal fade" id="registroModal" tabindex="-1" role="dialog" aria-labelledby="registroModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="registroModalLabel">Registro de producto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="cantidad">Cantidad disponible</label>
+                                <input type="number" class="form-control" id="cantidad" name="cantidad" min="1"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio">Precio</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="number" class="form-control" id="precio" name="precio" step="0.50"
+                                        min="0.50" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="visible" name="visible" checked>
+                                    <label class="form-check-label" for="visible">Visible</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="imagen">Imagen</label>
+                                <input type="file" class="form-control-file" id="imagen" name="imagen">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <table class="table my-2 mb-4">
+        <thead>
+            <tr class="">
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Cantidad disponible</th>
+                <th>Precio</th>
+                <th>Es visible</th>
+                <th>Imagen</th>
+                <th>Editar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>Ejemplo 1</td>
+                <td>Descripción del ejemplo 1</td>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Sí</td>
+                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
+
+                <td>
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                        data-target="#registroModal">
+                        <i class="fas fa-pencil-alt"></i> Editar
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
+                        <i class="fa fa-trash"></i> Eliminar
+                    </button>
+                </td>
+
+            <tr>
+                <td>Ejemplo 1</td>
+                <td>Descripción del ejemplo 1</td>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Sí</td>
+                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
+
+                <td>
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                        data-target="#registroModal">
+                        <i class="fas fa-pencil-alt"></i> Editar
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
+                        <i class="fa fa-trash"></i> Eliminar
+                    </button>
+                </td>
+
+            <tr>
+                <td>Ejemplo 1</td>
+                <td>Descripción del ejemplo 1</td>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Sí</td>
+                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
+
+                <td>
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                        data-target="#registroModal">
+                        <i class="fas fa-pencil-alt"></i> Editar
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
+                        <i class="fa fa-trash"></i> Eliminar
+                    </button>
+                </td>
+
+            <tr>
+                <td>Ejemplo 1</td>
+                <td>Descripción del ejemplo 1</td>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Sí</td>
+                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
+
+                <td>
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                        data-target="#registroModal">
+                        <i class="fas fa-pencil-alt"></i> Editar
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
+                        <i class="fa fa-trash"></i> Eliminar
+                    </button>
+                </td>
+
+            <tr>
+                <td>Ejemplo 1</td>
+                <td>Descripción del ejemplo 1</td>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Sí</td>
+                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
+
+                <td>
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                        data-target="#registroModal">
+                        <i class="fas fa-pencil-alt"></i> Editar
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
+                        <i class="fa fa-trash"></i> Eliminar
+                    </button>
+                </td>
+
+            <tr>
+                <td>Ejemplo 1</td>
+                <td>Descripción del ejemplo 1</td>
+                <td>10</td>
+                <td>$20.00</td>
+                <td>Sí</td>
+                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
+
+                <td>
+                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                        data-target="#registroModal">
+                        <i class="fas fa-pencil-alt"></i> Editar
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
+                        <i class="fa fa-trash"></i> Eliminar
+                    </button>
+                </td>
+
+
+
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-img text-secondary" style="margin-top: 90px">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 mb-lg-n5">
+
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+
+
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-secondary py-4" style="background: #111111;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Alquimia Cakes</a>.
+            <p>Creada por: Equipo 8, Programacion Web E-J 2023 </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
