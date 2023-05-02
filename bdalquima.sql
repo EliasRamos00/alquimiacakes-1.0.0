@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-03-2023 a las 07:30:53
+-- Tiempo de generación: 02-05-2023 a las 07:08:27
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.0.25
 
@@ -35,6 +35,36 @@ CREATE TABLE `categorias` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `mensajes`
+--
+
+CREATE TABLE `mensajes` (
+  `id_mensaje` int(11) NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `correo` varchar(30) NOT NULL,
+  `asunto` varchar(30) NOT NULL,
+  `mensaje` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `mensajes`
+--
+
+INSERT INTO `mensajes` (`id_mensaje`, `nombre`, `correo`, `asunto`, `mensaje`) VALUES
+(1, '1', '1@g.com', '1', '1'),
+(2, '1', '1@g.com', '1', '1'),
+(3, '1', '1@g.com', '11', '1'),
+(4, '1', '1@g.com', '11', '1'),
+(5, '1', '1@g.com', '1', '1'),
+(6, '1', '1@g.com', '11', '1'),
+(7, '1', '1@g.com', '12', '1'),
+(8, '2', '2@g.com', '2', '2'),
+(9, '2', '2@g.com', '12', '2'),
+(10, '1', '2@g.com', '42', 'rewew');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `personas`
 --
 
@@ -44,6 +74,7 @@ CREATE TABLE `personas` (
   `apellido_paterno` varchar(30) NOT NULL,
   `apellido_materno` varchar(30) NOT NULL,
   `correo` varchar(30) NOT NULL,
+  `password` varchar(15) NOT NULL,
   `telefono` varchar(30) NOT NULL,
   `direccion` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_spanish2_ci;
@@ -120,6 +151,13 @@ ALTER TABLE `categorias`
   ADD KEY `id_categoria_2` (`id_categoria`);
 
 --
+-- Indices de la tabla `mensajes`
+--
+ALTER TABLE `mensajes`
+  ADD PRIMARY KEY (`id_mensaje`),
+  ADD UNIQUE KEY `id_mensaje` (`id_mensaje`);
+
+--
 -- Indices de la tabla `personas`
 --
 ALTER TABLE `personas`
@@ -172,6 +210,12 @@ ALTER TABLE `ventas`
 --
 ALTER TABLE `categorias`
   MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `mensajes`
+--
+ALTER TABLE `mensajes`
+  MODIFY `id_mensaje` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `personas`
