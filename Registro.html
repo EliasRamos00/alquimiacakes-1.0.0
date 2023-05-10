@@ -56,10 +56,10 @@
             <div class="card my-5">
               <div class="card-body">
                 <h4 class="card-title text-center mb-4">Registro</h4>
-					<form action="index.html">
+					<form action="Registro.php" method="POST">
 						<div class="form-group entrada">
 							<label for="nombre">Nombre(s)</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required title="Por favor, ingresa tu nombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required title="Por favor, ingresa tu nombre">
                             
 						</div>
 						
@@ -70,17 +70,17 @@
 						
 						<div class="form-group entrada">
 							<label for="correo">Correo electrónico</label>
-							<input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo electrónico" required>
+							<input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
 						</div>
 						
 						<div class="form-group entrada">
 							<label for="contraseña">Contraseña</label>
-							<input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña" required>
+							<input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
 						</div>
 						
 						<div class="form-group entrada">
 							<label for="confirmacion">Confirmación de contraseña</label>
-							<input type="password" class="form-control" id="confirmacion" placeholder="Ingresa de nuevo tu contraseña" required>
+							<input type="password" class="form-control" id="confirmacion" name="confirmacion" placeholder="Ingresa de nuevo tu contraseña" required>
 						</div>
 						
 						<div class="form-group entrada">
@@ -90,15 +90,16 @@
 						
 						<div class="form-group entrada">
 							<label for="telefono">Teléfono celular</label>
-							<input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
+							<input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
 						</div>
                         
 
 						
-						<button type="submit" class="btn btn-primary" href="index.html">Registrarse</button>
+						<button type="submit" class="btn btn-primary" >Registrarse</button>
 						<div class="col-md-6 d-flex justify-content-end w-100">
 							<a href="login.html" class="btn btn-secondary w-100">Cancelar</a>
 						  </div>
+						  <span id="error_message"></span>
 					</form>
 					
                 </div>
