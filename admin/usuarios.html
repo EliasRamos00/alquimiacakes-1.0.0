@@ -50,15 +50,7 @@
     <!-- Topbar Start -->
     <div class="container-fluid px-0 d-none d-lg-block">
         <div class="row gx-0 justify-content-center">
-            <!-- <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Email Us</h6>
-                        <span>info@example.com</span>
-                    </div>
-                </div>
-            </div> -->
+          
             <div class="col-lg-4 text-center font-secondary bg-primary border-inner py-2">
                 <div class="d-inline-flex align-items-center justify-content-center">
                     <a href="index.html" class="navbar-brand">
@@ -69,15 +61,7 @@
                 </div>
                 <p>administrador</p>
             </div>
-            <!-- <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Call Us</h6>
-                        <span>+012 345 6789</span>
-                    </div>
-                </div>
-            </div> -->
+      
         </div>
     </div>
     <!-- Topbar End -->
@@ -95,7 +79,6 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
 
             <div class="navbar-nav ms-auto mx-lg-auto py-0 ">
-
                 <div class="nav-item dropdown">
                     <a href="categorias.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Categorias</a>
                     <div class="dropdown-menu m-0">
@@ -119,6 +102,7 @@
                 <a href="usuarios.html" class="nav-item nav-link active">Usuarios</a>
                 <a href="mensajes.html" class="nav-item nav-link active">Mensajes</a>
                 <a href="pedidos.html" class="nav-item nav-link active">Pedidos</a>
+
 
 
             </div>
@@ -155,9 +139,7 @@
 
 
     <div class="d-flex justify-content-between my-2" style="margin-right: 20px;">
-        <h2 class="my-3">Administrador de macaroons.</h2>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registroModal">Nuevo
-            producto</button>
+        <h2 class="my-3">Administrador de Usuarios.</h2>
     </div>
 
 
@@ -228,147 +210,63 @@
         <thead>
             <tr class="">
                 <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Cantidad disponible</th>
-                <th>Precio</th>
-                <th>Es visible</th>
-                <th>Imagen</th>
+                <th>Correo</th>    
+                <th>Direccion</th>
+                <th>Telefono</th>
                 <th>Editar</th>
-                <th>Eliminar</th>
             </tr>
         </thead>
         <tbody>
 
 
             <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
+                <td>Maria de Los Santos Martinez Reyes</td>
+                <td>Ejemplo@Ejemplo.com</td>         
+                <td>Colonia Obrera 401</td>    
+                <td>6183013454</td>           
                 <td>
                     <button type="button" class="btn btn-warning text-white" data-toggle="modal"
                         data-target="#registroModal">
                         <i class="fas fa-pencil-alt"></i> Editar
                     </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
+                </td>           
             <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-
-
-
+                <tr>
+                    <td>Maria de Los Santos Martinez Reyes</td>
+                    <td>Ejemplo@Ejemplo.com</td>         
+                    <td>Colonia Obrera 401</td>    
+                    <td>6183013454</td>           
+                    <td>
+                        <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                            data-target="#registroModal">
+                            <i class="fas fa-pencil-alt"></i> Editar
+                        </button>
+                    </td>           
+                <tr>  <tr>
+                    <td>Maria de Los Santos Martinez Reyes</td>
+                    <td>Ejemplo@Ejemplo.com</td>         
+                    <td>Colonia Obrera 401</td>    
+                    <td>6183013454</td>           
+                    <td>
+                        <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                            data-target="#registroModal">
+                            <i class="fas fa-pencil-alt"></i> Editar
+                        </button>
+                    </td>           
+                <tr>  <tr>
+                    <td>Maria de Los Santos Martinez Reyes</td>
+                    <td>Ejemplo@Ejemplo.com</td>         
+                    <td>Colonia Obrera 401</td>    
+                    <td>6183013454</td>           
+                    <td>
+                        <button type="button" class="btn btn-warning text-white" data-toggle="modal"
+                            data-target="#registroModal">
+                            <i class="fas fa-pencil-alt"></i> Editar
+                        </button>
+                    </td>           
+                <tr>
+                
+                
         </tbody>
     </table>
 

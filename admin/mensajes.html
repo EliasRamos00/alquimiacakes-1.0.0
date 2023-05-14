@@ -36,9 +36,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -50,15 +47,7 @@
     <!-- Topbar Start -->
     <div class="container-fluid px-0 d-none d-lg-block">
         <div class="row gx-0 justify-content-center">
-            <!-- <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Email Us</h6>
-                        <span>info@example.com</span>
-                    </div>
-                </div>
-            </div> -->
+          
             <div class="col-lg-4 text-center font-secondary bg-primary border-inner py-2">
                 <div class="d-inline-flex align-items-center justify-content-center">
                     <a href="index.html" class="navbar-brand">
@@ -69,15 +58,7 @@
                 </div>
                 <p>administrador</p>
             </div>
-            <!-- <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Call Us</h6>
-                        <span>+012 345 6789</span>
-                    </div>
-                </div>
-            </div> -->
+      
         </div>
     </div>
     <!-- Topbar End -->
@@ -121,6 +102,7 @@
                 <a href="pedidos.html" class="nav-item nav-link active">Pedidos</a>
 
 
+
             </div>
 
         </div>
@@ -155,9 +137,7 @@
 
 
     <div class="d-flex justify-content-between my-2" style="margin-right: 20px;">
-        <h2 class="my-3">Administrador de macaroons.</h2>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registroModal">Nuevo
-            producto</button>
+        <h2 class="my-3">Administrador de Usuarios.</h2>
     </div>
 
 
@@ -228,147 +208,47 @@
         <thead>
             <tr class="">
                 <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Cantidad disponible</th>
-                <th>Precio</th>
-                <th>Es visible</th>
-                <th>Imagen</th>
-                <th>Editar</th>
-                <th>Eliminar</th>
+                <th>Correo</th>    
+                <th>Asunto</th>
+                <th>Mensaje</th>
+            
             </tr>
         </thead>
         <tbody>
 
 
             <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
+                <td>Maria de Los Santos Martinez Reyes</td>
+                <td>Ejemplo@Ejemplo.com</td>         
+                <td>Asunto del mensaje</td>    
+                <td>Mensaje mensaje mensaje</td>                            
             <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-            <tr>
-                <td>Ejemplo 1</td>
-                <td>Descripción del ejemplo 1</td>
-                <td>10</td>
-                <td>$20.00</td>
-                <td>Sí</td>
-                <td><img src="ruta/imagen1.jpg" alt="Imagen 1" width="50"></td>
-
-                <td>
-                    <button type="button" class="btn btn-warning text-white" data-toggle="modal"
-                        data-target="#registroModal">
-                        <i class="fas fa-pencil-alt"></i> Editar
-                    </button>
-                </td>
-
-                <td>
-                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#confirm-delete">
-                        <i class="fa fa-trash"></i> Eliminar
-                    </button>
-                </td>
-
-
-
-
+                <tr>
+                    <td>Maria de Los Santos Martinez Reyes</td>
+                    <td>Ejemplo@Ejemplo.com</td>         
+                    <td>Asunto del mensaje</td>    
+                    <td>Mensaje mensaje mensaje</td>                            
+                <tr>
+                    <tr>
+                        <td>Maria de Los Santos Martinez Reyes</td>
+                        <td>Ejemplo@Ejemplo.com</td>         
+                        <td>Asunto del mensaje</td>    
+                        <td>Mensaje mensaje mensaje</td>                            
+                    <tr>
+                        <tr>
+                            <td>Maria de Los Santos Martinez Reyes</td>
+                            <td>Ejemplo@Ejemplo.com</td>         
+                            <td>Asunto del mensaje</td>    
+                            <td>Mensaje mensaje mensaje</td>                            
+                        <tr>
+                            <tr>
+                                <td>Maria de Los Santos Martinez Reyes</td>
+                                <td>Ejemplo@Ejemplo.com</td>         
+                                <td>Asunto del mensaje</td>    
+                                <td>Mensaje mensaje mensaje</td>                            
+                            <tr>
+                
+                
         </tbody>
     </table>
 

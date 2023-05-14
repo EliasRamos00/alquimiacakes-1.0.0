@@ -1,115 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<style>
 		body {
 			background: linear-gradient(to bottom right, #dddddd, #eeeeee);
 		}
-		
+
 		.form-container {
 			background-color: #ffffff;
 			border-radius: 10px;
 			padding: 20px;
-			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 			margin-top: 50px;
 		}
-		
+
 		.form-container h1 {
 			text-align: center;
 			margin-bottom: 20px;
 		}
-		
+
 		.form-control:focus {
 			border-color: #28a745;
 			box-shadow: none;
 		}
-		
-		.btn-primary {
-			
-			width: 100%;
-			margin-top: 10px;
-		}
-		
-		.btn-secondary {
-		
-			width: 100%;
-			margin-top: 10px;
-		}
-        .entrada {
-            margin-bottom: 20px;
-            }
-	</style>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registro</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container-fluid" style="background-image: url('img_prod/bg.jpg'); opacity: 0.8; background-size: cover;">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-sm-8 col-10">
-            <div class="card my-5">
-              <div class="card-body">
-                <h4 class="card-title text-center mb-4">Registro</h4>
-					<form action="Registro.php" method="POST">
-						<div class="form-group entrada">
-							<label for="nombre">Nombre(s)</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required title="Por favor, ingresa tu nombre">
-                            
-						</div>
-						
-						<div class="form-group entrada">
-							<label for="apellidos">Apellidos</label>
-							<input type="text" class="form-control" id="apellidos" placeholder="Ingresa tus apellidos" required>
-						</div>
-						
-						<div class="form-group entrada">
-							<label for="correo">Correo electrónico</label>
-							<input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
-						</div>
-						
-						<div class="form-group entrada">
-							<label for="contraseña">Contraseña</label>
-							<input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
-						</div>
-						
-						<div class="form-group entrada">
-							<label for="confirmacion">Confirmación de contraseña</label>
-							<input type="password" class="form-control" id="confirmacion" name="confirmacion" placeholder="Ingresa de nuevo tu contraseña" required>
-						</div>
-						
-						<div class="form-group entrada">
-							<label for="fecha">Fecha de nacimiento</label>
-							<input type="date" class="form-control" id="fecha">
-						</div>
-						
-						<div class="form-group entrada">
-							<label for="telefono">Teléfono celular</label>
-							<input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono">
-						</div>
-                        
 
-						
-						<button type="submit" class="btn btn-primary" >Registrarse</button>
-						<div class="col-md-6 d-flex justify-content-end w-100">
-							<a href="login.html" class="btn btn-secondary w-100">Cancelar</a>
-						  </div>
-						  <span id="error_message"></span>
-					</form>
-					
-                </div>
-              </div>
-            </div>
-          </div>
-	
-	<!-- Bootstrap JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+		.btn-primary {
+
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.btn-secondary {
+
+			width: 100%;
+			margin-top: 10px;
+		}
+
+		.entrada {
+			margin-bottom: 20px;
+		}
+
+		.formulario.aparecer {
+			opacity: 1;
+			transition: opacity 0.7s ease-in-out;
+		}
+		.formulario {
+		opacity: 0;
+	}
+
+	.btnAp.aparecer {
+			opacity: 1;
+			transition: opacity 2s ease-in-out;
+		}
+		.btnAp {
+		opacity: 0;
+	}
+	</style>
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+		<title>Registro</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+
+<body>
+	<div class="container-fluid"
+		style="background-image: url('img_prod/bg.jpg'); opacity: 0.8; background-size: cover;">
+		<div class="row justify-content-center">
+			<div class="col-md-6 col-sm-8 col-10">
+				<div class="card my-5 container formulario">
+					<div class="card-body ">
+						<h4 class="card-title text-center mb-4">Registro</h4>
+						<form action="Registro.php" method="POST">
+							<div class="form-group entrada">
+								<label for="nombre">Nombre(s)</label>
+								<input type="text" class="form-control" id="nombre" name="nombre"
+									placeholder="Ingresa tu nombre" required title="Por favor, ingresa tu nombre">
+
+							</div>
+
+							<div class="form-group entrada">
+								<label for="apellidos">Apellido Paterno</label>
+								<input type="text" class="form-control" id="apellidos"
+									placeholder="Ingresa tu apellido paterno" required>
+							</div>
+
+							<div class="form-group entrada">
+								<label for="apellidos">Apellido Materno</label>
+								<input type="text" class="form-control" id="apellidos"
+									placeholder="Ingresa tu apellido materno">
+							</div>
+
+							<div class="form-group entrada">
+								<label for="correo">Correo electrónico</label>
+								<input type="email" class="form-control" id="correo" name="correo"
+									placeholder="Ingresa tu correo electrónico" required>
+							</div>
+
+							<div class="form-group entrada">
+								<label for="contraseña">Contraseña</label>
+								<input type="password" class="form-control" id="contraseña" name="contraseña"
+									placeholder="Ingresa tu contraseña" required>
+							</div>
+
+
+							<div class="form-group entrada">
+								<label for="apellidos">Direccion</label>
+								<input type="text" class="form-control" id="dirección" placeholder="Ingresa dirección">
+							</div>
+
+
+
+							<div class="form-group entrada">
+								<label for="telefono">Teléfono celular</label>
+								<input type="tel" class="form-control" id="telefono" name="telefono"
+									placeholder="Ingresa tu número de teléfono">
+							</div>
+
+
+
+							<button type="submit" class="btn btn-primary btnAp">Registrarse</button>
+							<div class="col-md-6 d-flex justify-content-end w-100 ">
+								<a href="login.html" class="btn btn-secondary w-100">Cancelar</a>
+							</div>
+							<span id="error_message"></span>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
+<script>
+	window.onload = function() {
+		document.querySelector('.formulario').classList.add('aparecer');
+		document.querySelector('.btnAp').classList.add('aparecer');
+	};
+	
+</script>
 </html>

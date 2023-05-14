@@ -93,3 +93,16 @@
     
 })(jQuery);
 
+function mostrarOcultarContraseña() {
+    var campoContraseña = document.getElementById("contraseña");
+    var iconoMostrarOcultar = document.getElementById("mostrar-ocultar-contraseña").querySelector("i");
+    if (campoContraseña.type === "password") {
+        campoContraseña.type = "text";
+        iconoMostrarOcultar.classList.remove("fa-eye");
+        iconoMostrarOcultar.classList.add("fa-eye-slash");
+    } else {
+        campoContraseña.type = "password";
+        iconoMostrarOcultar.classList.remove("fa-eye-slash");
+        iconoMostrarOcultar.classList.add("fa-eye");
+    }
+}
